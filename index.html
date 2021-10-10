@@ -1,30 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <html>
+
 	<head>
     	<meta charset="UTF-8">
     	<link rel="stylesheet" type="text/css" href="styls.css">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    	<link rel="shortcut icon" href="img/IconW.png" type="image/png">
     	<title>Dan.Butique</title>
 	</head>
-	<body>
-		<header>
-			<div class="cap">
-				<img class="logo" src="img/Logo.png" />
-				<div id="name-header">Dan.Butique - Фотограф Краснодара</div>
+
+
+
+
+
+
+	<body style="font-family: Google Sans; color: gray;" >
+		<header class="m-auto col-sm-12 col-md-12 col-lg-12">
+			<div class="row m-auto col-sm-12 col-md-6 col-lg-6" style="display: flex; padding-left: 4vw;">
+				<img class="logo" src="img/Logo.png" width="130vw" height="130vw" />
+				<div id="name-header" style="font-size: 1.1em; display: flex; align-items: center; padding-bottom: 0.6em;">Dan.Butique - Фотограф Краснодара</div>
 			</div>
 		</header>
-		
-	<div class="contaner">	
-			<nav>
-					<a href="https://www.kubsu.ru/">Портфолио</a>
-					<a href="https://www.kubsu.ru/">Услуги</a>
-					<a href="https://www.kubsu.ru/">Прайс</a>
-					<a href="https://www.kubsu.ru/">Контакты</a>
+		<div class="container m-auto col-sm-12 col-md-8 col-lg-8">	
+			<nav class="row m-auto p-2 col-md-8 col-lg-8">
+					<a class="col-sm-3 m-auto p-1" href="https://www.kubsu.ru/">Портфолио</a>
+					<a class="col-sm-3 m-auto p-1" href="https://www.kubsu.ru/">Услуги</a>
+					<a class="col-sm-3 m-auto p-1" href="https://www.kubsu.ru/">Прайс</a>
+					<a class="col-sm-3 m-auto p-1" href="https://www.kubsu.ru/">Контакты</a>
 			</nav>
 		
-		<div class="content">
+		<div class="m-auto col-sm-12 col-md-8 col-lg-8">
 
-		<ol>
+		<ol style="margin-top: 1.5em;">
 			<li><a href="http://example.com">Абсолютная гиперссылка на главную страницу сайта example.com</a></li>
 			<li><a href="https://example.com">Абсолютная на главную сайта example.com в протоколе https</a></li>
 			<li><a href="ftp://tavalik.ru/Temp/file.txt">Ссылка на файл на сервере FTP без авторизации</a></li>
@@ -46,13 +55,13 @@
         	<li><a href="https://www.kubsu.ru/" rel="noindex">  Ссылка, запрещенная для индексации поисковиками</a></li>
         	<li>Пробная версия <a href="https://www.kubsu.ru/">контекстной ссылки</a> в тексте</li>
         	<li>Ссылка-изображение:</br>
-        		<br><a href="https://www.kubsu.ru/"><img class="images" src="https://vsthemes.org/uploads/posts/2017-10/1582030821_marble_vsthemes_ru-16.jpg"  title="Ссылка-изображение"></a></li></br>
+        		<br><a href="https://www.kubsu.ru/"><img class="images" src="https://vsthemes.org/uploads/posts/2017-10/1582030821_marble_vsthemes_ru-16.jpg"  title="Ссылка-изображение" width="250em" height="150em"></a></li></br>
         	<li>Ссылки из прямоугольных и круглых областей картинки:</br>
 				<br><map name = "click">
 					<area shape = "circle" coords="250, 130, 85" href="https://www.kubsu.ru/" title="Круг">
     				<area shape = "rect" coords="10,10,130,240" href="https://www.kubsu.ru/" title="Прямоугольник">
     			</map>
-				<img class="images" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP26SXVnGDLbtQGizpXaAZHO8FtDmmTp1RPV1f2vHU6xRTV9gmi7V_aspDt_sKemh3yuc&usqp=CAU" usemap="#click"></br>
+				<img class="images" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP26SXVnGDLbtQGizpXaAZHO8FtDmmTp1RPV1f2vHU6xRTV9gmi7V_aspDt_sKemh3yuc&usqp=CAU" usemap="#click" width="250vw" height="150vw"></br>
    			</li>
         	<br><li><a href="/str.html">Относительная ссылка на страницу в текущем каталоге</a></li>
         	<li><a href="/about/str.html">Относительная ссылка на страницу в каталоге about</a></li>
@@ -61,21 +70,20 @@
         	<li><a href="/">Сокращенная ссылка на главную</a></li>
         	<li><a href="/str.html">Сокращенная ссылка на внутреннюю</a></li></br>
 		</div>
-		<div class="tab">
-		<table>
-      		<tr>
+		<div class="col-sm-9 col-md-6 m-auto p-2">
+		<table class="m-auto">
+      		<tr align="center">
         		<th>1</th>
         		<th>2</th>
         		<th>3</th>
       		</tr>
      		<tr bgcolor="white">
-        		<td colspan="2">Ячейка 11 объединенная с 12</td>
-      			<td>Ячейка 13</td>
+        		<td colspan="2"  align="center">Ячейка 11-12</td>
+      			<td rowspan="2" align="center">Ячейка </p>13-23</td>
       		</tr>
       		<tr>
         		<td>Ячейка 21</td>
         		<td>Ячейка 22</td>
-        		<td>Ячейка 23</td>
       		</tr>
       		<tr bgcolor="white">
         		<td>Ячейка 31</td>
@@ -92,8 +100,8 @@
       		</tr>
     	</table>
     </div>
-		<div class="form">
-        	<form naction="/" method="post">
+		<div>
+        	<form naction="/" method="post" class="p-5 col-sm-9 col-md-6 m-auto">
         		<font id="form-text">Форма</font>
         		<label>
         			Имя:&nbsp&nbsp <font color="red">*</font>
@@ -162,7 +170,7 @@
         </div>
         </ol>
 		</div>
-        <footer>
+        <footer class="p-5">
         	<font id="foot">(C)Бутовский Данила 2021</font>
         </footer>
 	</body>
